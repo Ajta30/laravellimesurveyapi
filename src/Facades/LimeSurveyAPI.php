@@ -13,6 +13,6 @@ class LimeSurveyAPI extends Facade
      */
     protected static function getFacadeAccessor()
     { 
-    	return \neilherbertuk\laravellimesurveyapi\LimesurveyApi::class;
+    	return \ajta30\laravellimesurveyapi\LimesurveyApi::class;
     }
 }

@@ -1,5 +1,5 @@
 {
-  "name": "neilherbertuk/laravellimesurveyapi",
+  "name": "ajta30/laravellimesurveyapi",
   "description": "Laravel wrapper for the LimeSurvey RemoteControl2 API",
   "keyword": [
     "limesurvey",
@@ -11,18 +11,18 @@
   "license": "MIT",
   "authors": [
     {
-      "name": "neilherbertuk",
-      "email": "neil@ea3.co.uk"
+      "name": "ajta30",
+      "email": "andres.toyo@ada-lab.cl"
     },
       {
       "name": "du-lei",
-      "email": "duleijob@gmail.com"
+      "email": "jsoria@ada-lab.cl"
     }
   ],
   "autoload": {
     "psr-4": {
       "App\\": "app/",
-      "neilherbertuk\\laravellimesurveyapi\\": "src/"
+      "ajta30\\laravellimesurveyapi\\": "src/"
     }
   },
   "minimum-stability": "stable",
@@ -36,10 +36,10 @@
   "extra": {
     "laravel": {
       "providers": [
-        "neilherbertuk\\laravellimesurveyapi\\LaravelLimesurveyApiProvider"
+        "ajta30\\laravellimesurveyapi\\LaravelLimesurveyApiProvider"
       ],
       "aliases": {
-      	"LimeSurveyAPI": "neilherbertuk\\laravellimesurveyapi\\Facades\\LimeSurveyAPI"
+      	"LimeSurveyAPI": "ajta30\\laravellimesurveyapi\\Facades\\LimeSurveyAPI"
       }
     }
   }

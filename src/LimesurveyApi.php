@@ -1,6 +1,6 @@
 <?php
 
-namespace neilherbertuk\laravellimesurveyapi;
+namespace ajta30\laravellimesurveyapi;
 
 use org\jsonrpcphp\JsonRPCClient;
 

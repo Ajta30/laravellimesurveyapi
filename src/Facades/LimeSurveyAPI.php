@@ -1,6 +1,6 @@
 <?php
 
-namespace neilherbertuk\laravellimesurveyapi\Facades;
+namespace ajta30\laravellimesurveyapi\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

@@ -946,6 +946,33 @@ class LimesurveyApi
     /**
      * TODO
      *
+     * Set properties of a survey participant/token.
+     *
+     * Allow to set properties about participants, more than one particpant can be updated.
+     *
+     * @see    \Token for available properties
+     *
+     * @access public
+     *
+     * @param int       $iSurveyID             Id of the Survey that participants belong
+     * @param array     $aTokenData            Data to change ["tid"=>##, ...properties to update...]
+     *
+     * @return array Result of the change action
+     */
+
+    public function ada_set_participants_properties ( $iSurveyID, array $aTokenData = [] )
+    {
+        return $this->jsonRPCClient->ada_set_participants_properties( $this->session_key, $iSurveyID, $aTokenData );
+    }
+
+    public function ada_set_participants_properties_masive ( $iSurveyID, array $aTokenData = [] )
+    {
+        return $this->jsonRPCClient->ada_set_participants_properties_masive( $this->session_key, $iSurveyID, $aTokenData );
+    }
+
+    /**
+     * TODO
+     *
      * Set question properties.
      *
      * @see    \Question for available properties.

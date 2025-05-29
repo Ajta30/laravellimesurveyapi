@@ -874,6 +874,11 @@ class LimesurveyApi
         return $this->jsonRPCClient->remind_participants( $this->session_key, $iSurveyID, $iMinDaysBetween, $iMaxReminders, $aTokenIds );
     }
 
+    public function add_question ( $iSurveyID, $aQuestionData, $sLanguage = null, $iParentID = 0 )
+    {
+        return $this->jsonRPCClient->add_question( $this->session_key, $iSurveyID, $aQuestionData, $sLanguage, $iParentID );
+    }
+
     /**
      * TODO
      *

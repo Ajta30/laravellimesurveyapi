@@ -879,6 +879,11 @@ class LimesurveyApi
         return $this->jsonRPCClient->add_question( $this->session_key, $iSurveyID, $aQuestionData, $sLanguage, $iParentID );
     }
 
+    public function cpd_getParticipants( $iFilter = [], $iLimit = 100, $iOffset = 0 )
+    {
+        return $this->jsonRPCClient->cpd_getParticipants( $this->session_key, $iFilter, $iLimit, $iOffset);
+    }
+    
     /**
      * TODO
      *

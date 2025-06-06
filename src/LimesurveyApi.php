@@ -883,6 +883,16 @@ class LimesurveyApi
     {
         return $this->jsonRPCClient->cpd_getParticipants( $this->session_key, $iFilter, $iLimit, $iOffset);
     }
+
+    public function cpd_updateParticipant( $participant_id, $pData = [])
+    {
+        return $this->jsonRPCClient->cpd_updateParticipant( $this->session_key,  $participant_id, $pData);
+    }
+
+    public function cdp_deleteParticipant( $participant_id)
+    {
+        return $this->jsonRPCClient->cdp_deleteParticipant( $this->session_key,  $participant_id);
+    }
     
     /**
      * TODO
